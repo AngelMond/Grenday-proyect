@@ -1,0 +1,569 @@
+
+/*
+
+
+body{
+    background-image: url(img/fondo.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: 40px;
+
+}
+*/
+
+
+/* General Styles*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background: #F5D93D;
+}
+
+.wrap{
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+/* Header styles*/
+
+#header{
+
+    width: 100%;
+    margin: 0px auto;
+    background: #0CEFF5;
+    height: 428px;
+}
+
+#head1{
+    
+    text-align: center;
+    
+}
+
+
+
+
+
+/*Image of de band*/
+#head1 img{
+    width: 400px;
+    margin-bottom: 20px;
+    transition: 300ms;
+
+    
+}
+
+#head1 #bandimage{
+    margin-right: 59px;
+
+                                    /* Header Band image animation*/
+    
+                                    animation: rotate 1.1s linear;
+                                }
+
+                                @keyframes rotate{
+                                    from{
+
+                                        transform:skew(80deg);
+
+                                    }
+                                    to{
+                                        transform: skew(10deg);
+                                    }
+                                }
+
+
+#head1 h1{
+    display: block;
+    font-size: 50px;
+    color: #FE27BA ;
+    text-shadow: 1px 1px 2px black;
+    margin: 0px auto;
+    margin: 0px 0px 30px 0px;
+    line-height: 85px;                  
+                                            /*H1 Animation*/
+
+                                            animation: h1fall 1s linear;
+                                        }
+
+                                        @keyframes h1fall{
+
+                                            from{
+                                                transform: translateY(-500px);
+                                            }
+                                            to{
+                                                transform: translateY(0px);
+                                            }
+                                        }
+
+
+.greenday img{
+    width: 25%;
+
+                                    /*Greenday Logo Animation*/
+
+                                    animation: blink 1.8s linear ;
+                                }
+
+                                @keyframes blink{
+
+                                    from{
+                                    transform: translateY(-600px); 
+                                    }
+                                    to{
+                                        transform: translateY(0px); 
+                                    }
+                                    
+                                }
+
+
+
+#fondo1 {
+    display: block;
+    float: left;
+    
+    margin-left: 10%;
+}
+
+#fondo2 {
+    width: 294px;
+    display: block;
+    float: right;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FE27BA ;
+    text-shadow: 1px 1px 2px black;
+    margin-right: 14%;
+    margin-top: 75px;
+    
+
+                                    /* Animation h2 Tribute*/
+                                     overflow: hidden;
+}
+
+                                    #fondo2 h2{
+                                        
+                                        animation: h2fall 2.2s step-end;
+                                    }
+
+
+
+
+                                    @keyframes h2fall{
+
+                                        from{
+                                            transform: translateX(-6000px);
+                                        }
+                                        to{
+                                            transform: translateX(0px);
+                                        }
+                                    }
+
+
+/* Navegation styles*/
+#navigation{
+    width: 50%;
+    height: 66px;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 20px;
+    
+}
+
+#navigation ul{
+    width: 100%;
+    height: 66px;
+    font-size: 25px;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    
+}
+
+#navigation ul li{
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+
+
+
+                                            /* Nav transition*/
+                                                transition: 300ms;
+                                            }
+
+
+                                            #navigation ul li:hover{
+                                                transform: scale(1.3,1.4);
+                                            }
+
+
+
+
+#navigation ul li a{
+    text-decoration: none;
+    color: #F525B3 ;
+    font-weight: bold;
+}
+
+#navigation ul li:hover a{
+    
+    color: #F5D93D;
+}
+/*End Navegation*/
+
+/* Header styles*/
+
+
+
+/*Begin Biography*/
+#head2{
+    width: 90%;
+    margin:0px auto;
+    padding: 10px 0px 0px 20px;
+}
+
+#head2 h2{
+    display: block;
+    font-size: 30px;
+    margin: 0px 0px 0px 10px;
+    font-family: monospace;
+}
+
+#head2 p{
+    display: block;
+    font-family: sans-serif;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+#head2 a{
+    width: 30%;
+    text-decoration: none;
+    color: #11A4A8 ;
+    display: block;
+    margin-top: 10px;
+}
+
+#head2 a:hover{
+    color: #F525B3;
+   
+}
+/*End Biography*/
+
+
+
+/*Begin Aside*/
+#aside{
+    float: right;
+    width: 30%;
+}
+
+#aside #head4{
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+#aside #head4 h2,
+#aside #head4 h3{
+   text-align: center;
+}
+
+
+#asidetitle{
+    width: 84%;
+    margin: 0px auto;
+    text-align: center;
+    font-family: monospace;
+    border: 1px solid  black;
+    margin-bottom: 15px;
+    background: #F78D40;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #5a2602, 1px 1px 2px #5a2602, 1px 1px 2px #5a2602, 1px 1px 3px #5a2602, 1px 1px 4px #5a2602;
+}
+
+#asidetitle h2{
+    font-size: 27px;
+    
+}
+
+
+#aside #head4 h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#table{
+    margin: 0px auto;
+    box-shadow: 0px 0px 1px #6b5b01, 1px 1px 2px #6b5b01, 1px 1px 3px#6b5b01,  1px 1px 4px #6b5b01, 1px 1px 5px #6b5b01;
+    list-style: none;
+    border-radius: 5px;
+}
+
+#table #tr0{
+    font-family: monospace;
+    font-size: 22px ;
+    background: #F78D40 ;
+    
+}
+
+#table .tr{
+    width: 100%;
+    background: #3ec6ca ;
+}
+
+
+#table .td1{
+    /*#3ec6ca*/
+   
+   text-align: center;
+}
+
+
+                                    /* Albums Name Transition 400ms*/
+                                    #table .td1 a:hover{
+                                        transform: scale(1.4,1.5);
+                                    }
+
+
+
+#table .td1 a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+                                     transition: 400ms;
+
+}
+
+#table .td2 a{
+    display: block;
+    width: 64%;
+    margin: 0px auto;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+
+                                        /* Songs name transition*/
+
+                                        transition: 400ms;
+                                    }
+
+
+
+                                    .td2 a:hover{
+                                        transform: translateX(15px);
+                                    }
+
+
+
+.td2 .songsoverflow{
+    width: 90% !important;
+}
+
+#table a:hover{
+        color: #F525B3;
+}
+
+
+
+/*End Aside*/
+
+
+/* Members Section Begin*/
+
+#members{
+    
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+
+
+#head3{
+    width: 56.7%;
+    margin-left: 95px;
+    text-align: center;
+}
+
+#head3 h2{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-family: monospace;
+    border: 1px solid black;
+    background: #F78D40 ;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #6b5b01, 1px 1px 2px #6b5b01, 1px 1px 3px#6b5b01,  1px 1px 4px #6b5b01, 1px 1px 5px #6b5b01;
+}
+
+#head3 table{
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #6b5b01, 1px 1px 2px #6b5b01, 1px 1px 3px#6b5b01,  1px 1px 4px #6b5b01, 1px 1px 5px #6b5b01;
+}
+
+
+
+#head3 #trmembers{
+    font-family: monospace;
+    font-size: 18px ;
+    background: #F78D40 ;
+    font-weight: bold;
+}
+
+#trmembers a{
+    text-decoration: none;
+    color: #11A4A8;
+}
+
+#trmembers a:hover{
+    color: #FE27BA;
+}
+
+
+#head5{
+    width: 59%;
+    margin: 0px auto;
+    margin-top: 90px;
+  }
+
+  #head5 iframe{
+    width: 600px;
+    height: 500px;
+    border-bottom: 50px;
+  }
+
+  #head5 h2{
+    width: 59.6%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    background: #F78D40 ;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #6b5b01, 1px 1px 2px #6b5b01, 1px 1px 3px#6b5b01,  1px 1px 4px #6b5b01, 1px 1px 5px #6b5b01;
+  }
+
+
+/* Members Section End*/
+
+/*Start footer */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: rgb(37, 37, 37);
+    padding-top: 60px
+}
+
+footer #footer{
+    
+    width: 80%;
+    margin: 0px auto;
+    height: 50%;
+    text-align: center;
+    color: white;
+    
+}
+
+#footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+}
+
+#footer a{
+    text-decoration: none;
+    color: #11A4A8;
+    
+}
+      
+
+#footer a:hover{
+    color: #F525B3;
+}
+
+/*End footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+#head2{
+    text-align: left;
+    margin: 50px;
+
+}
+#head3{
+    margin: 50px;
+}
+
+#head3 p{
+    text-align: center;
+    
+}
+
+#head3 td{
+    text-align: center;
+}
+
+#head3 h2{
+    
+}
+
+#head4{
+    margin: 50px;
+}
+
+#head5{
+    margin: 50px;
+}
+
+p{
+    text-indent: 15px ;
+}
+
+table{
+    border-radius: 10px;
+}
+
+*/
